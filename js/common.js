@@ -27,5 +27,12 @@ $(function () {
     }
     $('#main_full').fullpage(option);
 
+    $('.grapic_btn li').on('click', function (e) {
+        e.preventDefault();
+        const idx = $(this).index();
+        $(this).addClass('on').siblings().removeClass('on');
+        $('.grapic').eq(idx).addClass('on').siblings().removeClass('on');
+    });
+
 
 })
