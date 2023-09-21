@@ -199,32 +199,76 @@
 /* project */
 
 .training_wrap {
-    border: 1px solid green;
+    font-family: "Pretendard Variable";
 }
 
 .training_box {
-    border: 1px solid blue;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    padding: 100px 0;
 }
 
 .training_box li {
-    border: 2px solid #333;
+    border: 5px solid #333;
     position: relative;
 }
 
 .training_img {
-    border: 1px solid red;
-    width: 100%;
+    width: 600px;
 }
 
 .training_txt {
     position: absolute;
     top: 0;
     left: 0;
-    border: 1px solid violet;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fdfdfd;
+    display: none;
+    text-align: center;
+}
+
+.training_box li:hover .training_txt {
+    display: block;
+}
+
+.training_txt .training_in>* {
+    margin-bottom: 10PX;
+}
+
+.training_txt .training_in h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.training_txt .training_in strong {
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+}
+
+.training_txt .training_in span {
+    font-size: 15px;
+    font-weight: 300;
+    display: block;
+}
+
+.training_btn a {
+    display: inline-block;
+    border: 1px solid #fdfdfd;
+    width: 180px;
+    text-align: center;
+    line-height: 2.0;
+    font-weight: 600;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.training_btn a:hover {
+    color: #333;
+    background: rgba(255, 255, 255, 1);
 }
 
 /* training */
