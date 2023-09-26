@@ -1,41 +1,16 @@
-.header {}
-
-.header h1 {
-    position: fixed;
-    top: 50px;
-    left: 100px;
-    z-index: 999;
-}
-
-.header h1 a {
-    background: url(../images/logo05.svg);
-    display: block;
-    width: 130px;
-    height: 65px;
-    font-size: 0;
-}
-
-.header.on h1 a {
-    background: url(../images/logo02.svg);
-}
-
 .header .gnb {
-    font-size: 20px;
-    font-weight: 500;
-
-    position: fixed;
-    bottom: 50%;
-    right: 100px;
-    z-index: 999;
-    transform: translateY(50%);
-    text-align: right;
-
     font-family: 'Philosopher', sans-serif;
-
+    position: fixed;
+    right: 100px;
+    top: 50%;
+    z-index: 999;
+    transform: translateY(-50%);
+    font-size: 20px;
+    text-align: right;
 }
 
 .header .gnb li~li {
-    margin-top: 40px;
+    margin-top: 32px;
 }
 
 .header .gnb li:hover {
@@ -44,155 +19,196 @@
 
 /* header */
 
-/* .slideBtn {
-    position: fixed;
-    top: 50%;
-    right: 50px;
-    transform: translate(0, -50%);
-    z-index: 1;
+.section {
+    background-image: url(../images/pt01.png);
+    background-attachment: fixed;
+    overflow: hidden;
 }
 
-.slideBtn li a {
-    position: relative;
-    display: block;
-    width: 50px;
-    height: 30px;
-    font-size: 0;
-}
+.web::before {
+    content: "WEB";
+    font-size: 400px;
+    opacity: 0.1;
+    font-weight: 900;
 
-.slideBtn li a::after {
-    content: "";
     position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(0, -50%);
-    width: 10px;
-    height: 10px;
-    background: #333;
-    border-radius: 50%;
-    transition: 0.3s;
+    right: -100px;
+    bottom: 0;
+
+    transform: rotate(-30deg);
 }
 
-.slideBtn li.on a::after {
-    display: block;
-    background: orange;
-} */
+.training::before {
+    content: "TRA";
+    font-size: 400px;
+    opacity: 0.1;
+    font-weight: 900;
 
-/* slideBtn */
-
-/* .section {
-    background: url(../images/bg04.png)no-repeat fixed center center/cover;
-} */
-
-/* section */
-.sec01 {
-    position: relative;
-}
-
-.sec01::before {
-    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    background: orange;
-    width: 50%;
-    height: 100%;
+    right: -100px;
+    bottom: 0;
+
+    transform: rotate(-30deg);
+}
+
+.grapic_in::before {
+    content: "GRA";
+    font-size: 400px;
+    opacity: 0.1;
+    font-weight: 900;
+
+    position: absolute;
+    right: -100px;
+    bottom: 0;
+
+    transform: rotate(-30deg);
 }
 
 .sec01 .sec01_txt_box {
-    text-align: center;
-    font-size: 60px;
-
-    font-family: 'Philosopher', sans-serif;
-
-    margin: 0 auto;
-    padding: 20px;
-
+    font-family: 'HSBombaram21-Regular';
     position: relative;
+    height: 100%;
+    width: 1310px;
+    margin: 0 auto;
 }
+
+.sec01 .sec01_txt_box .sec01_txt01 {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    align-items: center;
+}
+
+.sec01 .sec01_txt_box .sec01_txt01 span {
+    vertical-align: -3px;
+}
+
+.sec01 .sec01_txt_box .sec01_txt01::before {
+    content: "";
+    display: block;
+    width: 700px;
+    height: 1px;
+    background: orange;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.sec01 .sec01_txt_box .sec01_txt02 {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    width: 100%;
+    text-align: right;
+}
+
+.sec01 .sec01_txt_box .sec01_txt02::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: orange;
+}
+
+/* .sec01 .sec01_txt_box .sec01_txt02 span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 820px;
+} */
 
 .sec01 .sec01_txt_box h2 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: orange;
-    word-break: keep-all;
-}
-
-.sec01 .sec01_txt_box h2::before {
-    content: "Seojin's 2023 Portfolio";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 50%;
-    color: #fff;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-
-.sec01 .sec01_notice {
-    display: block;
-    position: absolute;
-    left: 50%;
-    bottom: 20%;
-    transform: translateX(-50%);
-    font-size: 14px;
-}
-
-
-.sec01 .sec01_notice span {
-    display: block;
-    word-break: keep-all;
+    font-size: 72px;
+    line-height: 1.3;
+    width: 100%;
     text-align: center;
 }
 
-.sec01 .sec01_notice span strong {
-    font-weight: 700;
-    font-size: 15px;
+.sec01 .sec01_txt_box h2 span {
+    color: orange;
 }
 
+.sec01 .sec01_txt_box div {
+    font-size: 25px;
+    color: orange;
+}
 
+.sec01 .sec01_txt_box div p {
+    display: block;
+    border: 1px solid gray;
+
+}
+
+/* 
+.sec01 .sec01_txt_box div span {
+    display: block;
+    width: 700px;
+    height: 2px;
+    background: orange;
+}
+ */
+
+.sec01_notice {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+}
+
+.sec01_notice span {
+    display: block;
+}
+
+.sec01_notice span strong {
+    font-weight: 600;
+    font-size: 20px;
+}
 
 /* sec01 */
 
 .section .inner {
     display: flex;
-    gap: 50px;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    position: relative;
 }
 
-.project_img {
-    width: 720px;
-    height: 400px;
-    overflow: hidden;
-    border: 10px solid #fff;
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
-    border: 10px solid #454545;
-
-}
 
 .project_img img {
-    transform: translate(0, 0);
-    transition: 15s;
-}
-
-.project_img:hover img {
-    transform: translate(0, calc(-100% + 410px));
+    width: 700px;
 }
 
 .project_box {
+    display: block;
     font-size: 16px;
-    font-family: "Pretendard Variable", Pretendard;
-
 }
 
 .project_box .project_tit {
+    position: relative;
     font-size: 40px;
     font-weight: 700;
+    line-height: 1.2;
+}
+
+.project_box .project_tit::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 80px;
+    height: 80px;
+    background: orange;
+    border-radius: 50%;
 }
 
 .project_box .project_tit em {
@@ -206,7 +222,7 @@
 .d_list li {
     border-bottom: 1px solid #ccc;
     padding: 14px 0;
-    width: 500px;
+    width: 450px;
 }
 
 .d_list strong {
@@ -250,68 +266,71 @@
     color: #025951;
 }
 
+.project_btn {
+    position: relative;
+}
+
 .project_btn a {
     display: inline-block;
-    background: #454545;
-    color: #fdfdfd;
+    border: 1px solid #454545;
+    color: #454545;
     padding: 8px 24px;
     font-size: 16px;
     font-weight: 500;
 }
 
 .project_btn a:hover {
-    color: orange;
+    border: 1px solid orange;
 }
 
 /* project */
 
-.training_wrap {
-    font-family: "Pretendard Variable";
-}
-
-.training_box {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.training_box li {
-    border: 5px solid #333;
+.training .inner .swiper .swiper-slide .slide_box {
+    margin: 0 auto;
     position: relative;
+    width: 900px;
 }
 
-.training_img {
-    width: 500px;
+.swiper-slide .training_img {
+    border: 1px solid#ddd;
+}
+
+.swiper-slide .training_txt {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .training_txt {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 900px;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.7);
     color: #fdfdfd;
-    display: none;
     text-align: center;
     flex-direction: column;
     justify-content: center;
 
     align-items: center;
+
+    display: none;
 }
 
-.training_box li:hover .training_txt {
+.slide_box:hover .training_txt {
     display: flex;
 }
 
 .training_txt .training_in>* {
-    margin-bottom: 8PX;
+    margin-bottom: 10PX;
 }
 
-.training_txt .training_in h3 {
+.slide_box h3 {
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .training_txt .training_in strong {
@@ -430,19 +449,24 @@
 
 .sec09 .sj_img {
     display: block;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    overflow: hidden;
+    width: 600px;
     position: relative;
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.4);
 }
 
 .sec09 .sj_img img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
+    position: relative;
+    z-index: 999;
+}
 
+.sec09 .sj_img::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: -20px;
+    left: -20px;
 }
 
 .sec09 .sj_txt h2 {

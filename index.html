@@ -10,19 +10,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
 
 
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/fullpage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./js/common.js" defer></script>
+
+
 </head>
 
 <body>
     <div class="wrap">
-        <header class="header">
-            <h1><a href="">logo</a></h1>
+        <header class="header"><!-- 
+            <h1><a href="">logo</a></h1> -->
             <nav>
                 <ul class="gnb">
+                    <li><a href="/">Home</a></li>
                     <li><a href="#02">Web Site</a></li>
                     <li><a href="#07">Training</a></li>
                     <li><a href="#08">Grapic Design</a></li>
@@ -30,35 +37,28 @@
                 </ul>
             </nav>
         </header>
-        <!-- <nav class="slideBtn">
-            <ul>
-                <li class="on"><a href="#01">01</a></li>
-                <li><a href="#02">02</a></li>
-                <li><a href="#03">03</a></li>
-                <li><a href="#04">04</a></li>
-                <li><a href="#05">05</a></li>
-                <li><a href="#06">06</a></li>
-                <li><a href="#07">07</a></li>
-                <li><a href="#08">08</a></li>
-                <li><a href="#09">09</a></li>
-            </ul>
-        </nav> -->
         <div id="main_full">
             <section class="section sec01">
-                <div class="sec01_txt_box animate__animated animate__rubberBand">
-                    <h2 class="">Seojin's 2023
-                        Portfolio</h2>
+                <!-- <div class="sec01_txt_box animate__animated animate__rubberBand"> -->
+                <div class="sec01_txt_box">
+                    <div class="sec01_txt01">
+                        <span>WEB DESIGNER & WEB PUBLISHER</span>
+                    </div>
+                    <h2><span>CODE</span>처럼 채워져 가는 <br>디자이너 <span>양서진</span> 입니다.</h2>
+                    <div class="sec01_txt02">
+                        <span>2023 SEOJIN PORTFOLIO</span>
+                    </div>
                 </div>
                 <div class="sec01_notice">
-                    <span class="animate__animated animate__backInUp animate__delay-1s"> &#8251;본 페이지는 상업적 목적이 아닌
+                    <span class="animate__animated animate__backInUp "> &#8251;본 페이지는 상업적 목적이 아닌
                         <strong>개인
                             포트폴리용</strong>으로 만들어진 사이트 입니다.</span>
                 </div>
             </section>
-            <section class="section sec02">
+            <section class="section sec02 web">
                 <div class="inner">
                     <figure class="project_img">
-                        <img src="./images/mediheal_web.png" alt="">
+                        <img src="./images/mediheal_mockup06.png" alt="">
                     </figure>
                     <div class="project_box">
                         <div class="project_tit">
@@ -97,10 +97,10 @@
                     </div>
                 </div>
             </section>
-            <section class="section sec03 project">
+            <section class="section sec03 project web">
                 <div class="inner">
                     <figure class="project_img">
-                        <img src="./images/goodal_web.png" alt="">
+                        <img src="./images/goodal_mockup02.png" alt="">
                     </figure>
                     <div class="project_box">
                         <div class="project_tit">
@@ -129,7 +129,7 @@
                                 </li>
                                 <li>
                                     <strong>Using Tool</strong>
-                                    <span>HTML, CSS, SLICK, YTPLAYE, JAVA SCRIPTR, JQUERY</span>
+                                    <span>HTML, CSS, SLICK, JAVA SCRIPTR, JQUERY</span>
                                 </li>
                             </ul>
                             <div class="project_btn">
@@ -139,10 +139,10 @@
                         </div>
                     </div>
             </section>
-            <section class="section sec04">
+            <section class="section sec04 web">
                 <div class="inner">
                     <figure class="project_img">
-                        <img src="./images/kotted_web.png" alt="">
+                        <img src="./images/kotted_mockup02.png" alt="">
                     </figure>
                     <div class="project_box">
                         <div class="project_tit">
@@ -181,14 +181,14 @@
                         </div>
                     </div>
             </section>
-            <section class="section sec05">
+            <section class="section sec05 web">
                 <div class="inner">
                     <figure class="project_img">
-                        <img src="./images/innerpeace_web.png" alt="">
+                        <img src="./images/innerpeace_mockup02.png" alt="">
                     </figure>
                     <div class="project_box">
                         <div class="project_tit">
-                            <span class="tit_name">이너피스 한방병원</span>
+                            <span class="tit_name">이너피스<br>한방병원</span>
                             <em>Project 04.</em>
                         </div>
                         <div class="project_txt">
@@ -223,14 +223,14 @@
                         </div>
                     </div>
             </section>
-            <section class="section sec06">
+            <section class="section sec06 web">
                 <div class="inner">
                     <figure class="project_img">
-                        <img src="./images/kosin_web.png" alt="">
+                        <img src="./images/kosin_mockup.png" alt="">
                     </figure>
                     <div class="project_box">
                         <div class="project_tit">
-                            <span class="tit_name">고신대학교 복음병원</span>
+                            <span class="tit_name">고신대학교<br>복음병원</span>
                             <em>Project 05</em>
                         </div>
                         <div class="project_txt">
@@ -265,93 +265,113 @@
                     </div>
                 </div>
             </section>
-            <section class="section sec07">
-                <div class="training_wrap inner">
-                    <ul class="training_box">
-                        <li>
-                            <div class="training_img">
-                                <img src="./images/practice01.jpg" alt="">
-                            </div>
-                            <div class="training_txt">
-                                <div class="training_in">
-                                    <h3>01. 부산 깔끔이청소</h3>
-                                    <strong>Type</strong>
-                                    <span>MAIN PAGE, RESPONSIVE PAGE, SUB PAGE</span>
-                                    <strong>Using Tool</strong>
-                                    <span>HTML, CSS, SCSS, JAVASCRIPT, JQUERY</span>
-                                    <strong>Participation</strong>
-                                    <span>100%</span>
-                                </div>
-                                <div class="training_btn">
-                                    <a href="https://jinjin121.github.io/practice01_busanclean/" target="_blank">사이트
-                                        바로가기</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="training_img">
-                                <img src="./images/practice02.jpg" alt="">
-                            </div>
-                            <div class="training_txt">
-                                <div class="training_in">
-                                    <h3>02. 독도전시관</h3>
-                                    <strong>Type</strong>
-                                    <span>MAIN PAGE , RESPONSIVE PAGE</span>
-                                    <strong>Using Tool</strong>
-                                    <span>HTML, CSS, SWIPER, JAVASCRIPT, JQUERY</span>
-                                    <strong>Participation</strong>
-                                    <span>100%</span>
-                                </div>
-                                <div class="training_btn">
-                                    <a href="https://jinjin121.github.io/practice02_dockdo/" target="_blank">사이트
-                                        바로가기</a>
+            <section class="section sec07 training">
+                <div class="inner">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide slide01">
+                                <div class="slide_box">
+                                    <div class="training_img">
+                                        <img src="./images/practice01.jpg" alt="">
+                                    </div>
+                                    <div class="training_txt">
+                                        <h3>01. 부산 깔끔이청소</h3>
+                                        <div class="training_in">
+                                            <strong>Type</strong>
+                                            <span>MAIN PAGE, RESPONSIVE PAGE, SUB PAGE</span>
+                                            <strong>Using Tool</strong>
+                                            <span>HTML, CSS, SCSS, JAVASCRIPT, JQUERY</span>
+                                            <strong>Participation</strong>
+                                            <span>100%</span>
+                                        </div>
+                                        <div class="training_btn">
+                                            <a href="https://jinjin121.github.io/practice01_busanclean/"
+                                                target="_blank">사이트
+                                                바로가기</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="training_img">
-                                <img src="./images/practice03.jpg" alt="">
-                            </div>
-                            <div class="training_txt">
-                                <div class="training_in">
-                                    <h3>03. 현대엘리베이터</h3>
-                                    <strong>Type</strong>
-                                    <span>MAIN PAGE , RESPONSIVE PAGE</span>
-                                    <strong>Using Tool</strong>
-                                    <span>HTML, CSS, SCSS, SWIPER, GSAP, JAVASCRIPT, JQUERY</span>
-                                    <strong>Participation</strong>
-                                    <span>100%</span>
-                                </div>
-                                <div class="training_btn">
-                                    <a href="https://jinjin121.github.io/practice03_hd/" target="_blank">사이트
-                                        바로가기</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="training_img">
-                                <img src="./images/practice04.jpg" alt="">
-                            </div>
-                            <div class="training_txt">
-                                <div class="training_in">
-                                    <h3>04. 아웃백</h3>
-                                    <strong>Type</strong>
-                                    <span>MAIN PAGE , RESPONSIVE PAGE</span>
-                                    <strong>Using Tool</strong>
-                                    <span>HTML, CSS, SCSS, SWIPER, GSAP, JAVASCRIPT, JQUERY</span>
-                                    <strong>Participation</strong>
-                                    <span>100%</span>
-                                </div>
-                                <div class="training_btn">
-                                    <a href="https://jinjin121.github.io/practice04_outback/" target="_blank">사이트
-                                        바로가기</a>
+                            <div class="swiper-slide slide02">
+                                <div class="slide_box">
+                                    <div class="training_img">
+                                        <img src="./images/practice02.jpg" alt="">
+                                    </div>
+                                    <div class="training_txt">
+                                        <h3>02. 독도전시관</h3>
+                                        <div class="training_in">
+                                            <strong>Type</strong>
+                                            <span>MAIN PAGE , RESPONSIVE PAGE</span>
+                                            <strong>Using Tool</strong>
+                                            <span>HTML, CSS, SWIPER, JAVASCRIPT, JQUERY</span>
+                                            <strong>Participation</strong>
+                                            <span>100%</span>
+                                        </div>
+                                        <div class="training_btn">
+                                            <a href="https://jinjin121.github.io/practice02_dockdo/" target="_blank">사이트
+                                                바로가기</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
+                            <div class="swiper-slide slide03">
+                                <div class="slide_box">
+                                    <div class="training_img">
+                                        <img src="./images/practice03.jpg" alt="">
+                                    </div>
+                                    <div class="training_txt">
+                                        <h3>03. 현대엘리베이터</h3>
+                                        <div class="training_in">
+                                            <strong>Type</strong>
+                                            <span>MAIN PAGE , RESPONSIVE PAGE</span>
+                                            <strong>Using Tool</strong>
+                                            <span>HTML, CSS, SCSS, SWIPER, GSAP, JAVASCRIPT, JQUERY</span>
+                                            <strong>Participation</strong>
+                                            <span>100%</span>
+                                        </div>
+                                        <div class="training_btn">
+                                            <a href="https://jinjin121.github.io/practice03_hd/" target="_blank">사이트
+                                                바로가기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide04">
+                                <div class="slide_box">
+                                    <div class="training_img">
+                                        <img src="./images/practice04.jpg" alt="">
+                                    </div>
+                                    <div class="training_txt">
+                                        <h3>04. 아웃백</h3>
+                                        <div class="training_in">
+                                            <strong>Type</strong>
+                                            <span>MAIN PAGE , RESPONSIVE PAGE</span>
+                                            <strong>Using Tool</strong>
+                                            <span>HTML, CSS, SWIPER, JAVASCRIPT, JQUERY</span>
+                                            <strong>Participation</strong>
+                                            <span>100%</span>
+                                        </div>
+                                        <div class="training_btn">
+                                            <a href="https://jinjin121.github.io/practice04_outback/"
+                                                target="_blank">사이트
+                                                바로가기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <!-- <div class="swiper-pagination"></div> -->
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
                 </div>
             </section>
-            <section class="section sec08">
+            <section class="section sec08 grapic_in">
                 <div class="grapic_wrap">
                     <ul class="grapic_btn">
                         <li class="on"><a href="">Album</a></li>
@@ -545,7 +565,7 @@
             <section class="section sec09">
                 <div class="inner">
                     <div class="sj_img">
-                        <img src="./images/seojin.jpg" alt="">
+                        <img src="./images/seojin02.jpg" alt="">
                     </div>
                     <div class="sj_txt">
                         <h2>About me</h2>
