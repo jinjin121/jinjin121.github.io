@@ -16,12 +16,11 @@ $(function () {
             $('.section').eq(destination.index).addClass('on')
                 .siblings().removeClass('on');
 
-            if (destination.index == 2) {
+            if (destination.index !== 0) {
                 $('.header').addClass('on');
             } else {
                 $('.header').removeClass('on');
             }
-
         },
 
     }
